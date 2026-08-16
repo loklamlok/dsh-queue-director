@@ -1,10 +1,12 @@
 # dsh-queue-director
 
+**[English](README.md) | [中文](README.zh.md)**
+
 A [DeepSeek Harness](https://github.com/deepseek-ai) web plugin that lets you **reorder queued messages** (up / down / top / bottom) before the agent processes them — handy when writing long articles or running a batch of prompts in your own preferred order.
 
 ## Features
 
-- Each queued message gains `↑` / `↓` buttons; when the queue is expanded, `置顶` (top) / `置底` (bottom) chips appear as well.
+- Each queued message gains `↑` / `↓` buttons; when the queue is expanded, **Move to top** / **Move to bottom** chips appear as well.
 - Built-in queue behaviors are preserved: preview, inline edit, remove, and send-now (steer).
 - No server restart needed after an update: DSH's client HMR pushes the new bundle automatically (a hard refresh of the page is enough).
 
