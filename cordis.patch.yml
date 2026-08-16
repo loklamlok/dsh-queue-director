@@ -1,0 +1,8 @@
+# dsh-queue-director bundle patch
+#
+# 作为 dsh.profile.bundles 组合包挂载：把本插件（宿主半 + 客户端半）插入
+# web profile 的加载器。卸载方法：从 profile package.json 的
+# dsh.profile.bundles 移除 "dsh-queue-director" 并删除依赖即可。
+- insert:
+    - id: queue-director
+      name: 'dsh-queue-director'
