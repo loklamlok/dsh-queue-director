@@ -1,6 +1,6 @@
 {
   "name": "dsh-queue-director",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "DSH web plugin: reorder queued messages (up / down / top / bottom) before the agent processes them.",
   "type": "module",
   "main": "lib/index.js",

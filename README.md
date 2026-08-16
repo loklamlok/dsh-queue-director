@@ -7,6 +7,9 @@ A [DeepSeek Harness](https://github.com/deepseek-ai) web plugin that lets you **
 ## Features
 
 - Each queued message gains `↑` / `↓` buttons; when the queue is expanded, **Move to top** / **Move to bottom** chips appear as well.
+- **Drag to reorder**: grab a message row (or its `⠿` handle) and drop it anywhere in the queue.
+- **Send all now**: promote every queued message to the AI at once (works while the task is running).
+- **Clear queue**: remove all pending messages in one click (with a two-step confirm to prevent accidents).
 - Built-in queue behaviors are preserved: preview, inline edit, remove, and send-now (steer).
 - No server restart needed after an update: DSH's client HMR pushes the new bundle automatically (a hard refresh of the page is enough).
 
