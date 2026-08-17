@@ -26,22 +26,22 @@
 
 ## 安装
 
-在 DSH web profile 目录（`$DSH_HOME/profiles/web`）下：
+插件尚未发布到 npm，请从源码安装：
 
 ```sh
-# 1. 添加插件依赖（路径换成你的代码位置）
-#    "dependencies": { "dsh-queue-director": "link:<插件路径>" }
-# 2. 在 package.json 注册 bundle：
+# 1. 把仓库克隆到任意位置
+git clone https://github.com/loklamlok/dsh-queue-director
+
+# 2. 在 DSH web profile 目录（$DSH_HOME/profiles/web）的 package.json
+#    中添加依赖（路径换成你的克隆位置）：
+#    "dependencies": { "dsh-queue-director": "link:<仓库路径>" }
+
+# 3. 注册 bundle：
 #    "dsh": { "profile": { "bundles": [..., "dsh-queue-director"] } }
-# 3. 安装并重启
+
+# 4. 安装并重启
 pnpm install
 # 重启 `dsh web`，然后强制刷新页面（Cmd/Ctrl+Shift+R）
-```
-
-或者，发布到 npm 后可使用官方插件命令：
-
-```sh
-dsh plugin --profile web add dsh-queue-director
 ```
 
 ## 卸载

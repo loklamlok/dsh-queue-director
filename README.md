@@ -26,22 +26,22 @@ A [DeepSeek Harness](https://github.com/deepseek-ai) web plugin that lets you **
 
 ## Install
 
-From your DSH web profile directory (`$DSH_HOME/profiles/web`):
+The plugin is not published to npm yet, so install it from source:
 
 ```sh
-# 1. Add the plugin package (adjust the path to your checkout)
-#    "dependencies": { "dsh-queue-director": "link:<path-to-this-repo>" }
-# 2. Register the bundle in package.json:
+# 1. Clone the repository anywhere you like
+git clone https://github.com/loklamlok/dsh-queue-director
+
+# 2. In your DSH web profile directory ($DSH_HOME/profiles/web),
+#    add the dependency (adjust the path to your clone):
+#    "dependencies": { "dsh-queue-director": "link:<path-to-repo>" }
+
+# 3. Register the bundle in package.json:
 #    "dsh": { "profile": { "bundles": [..., "dsh-queue-director"] } }
-# 3. Install and restart
+
+# 4. Install and restart
 pnpm install
 # restart `dsh web`, then hard-refresh the page (Cmd/Ctrl+Shift+R)
-```
-
-Or, once published to npm, use the official plugin command:
-
-```sh
-dsh plugin --profile web add dsh-queue-director
 ```
 
 ## Uninstall
